@@ -218,8 +218,8 @@
             <p class="text-md dark-text-200 font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nostrum!</p>
           </div>
         </div>
-        <div class="my-alert hidden">
-          <div id="alert" class="mb-4 flex w-full rounded-lg bg-green-100 p-4 text-green-700 dark:bg-green-200 lg:mx-auto lg:w-2/3" role="alert">
+        <div class="my-alert alert hidden">
+          <div class="mb-4 flex w-full items-center rounded-lg bg-green-100 p-4 text-green-700 transition duration-300 ease-in-out dark:bg-green-200 lg:mx-auto lg:w-2/3" role="alert">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-600" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
                 fill="currentColor"
@@ -229,8 +229,8 @@
             <div class="text-medium ml-3 font-medium text-green-700 dark:text-green-800"><strong>Berhasil Upload! </strong> Pesan Anda Sudah Kami Terima.</div>
             <button
               type="button"
-              class="-mx-1.5 -my-1.5 ml-auto inline-flex h-8 w-8 rounded-lg bg-green-100 p-1.5 text-green-500 hover:bg-green-200 focus:ring-2 focus:ring-green-400 dark:bg-green-200 dark:text-green-600 dark:hover:bg-green-300"
-              data-dismiss-target="#alert"
+              class="btn-close -mx-1.5 -my-1.5 ml-auto inline-flex h-8 w-8 rounded-lg bg-green-100 p-1.5 text-green-500 hover:bg-green-200 focus:ring-2 focus:ring-green-400 dark:bg-green-200 dark:text-green-600 dark:hover:bg-green-300"
+              data-bs-dismiss="alert"
               aria-label="Close"
             >
               <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -248,21 +248,52 @@
           <div class="w-full lg:mx-auto lg:w-2/3">
             <div class="mb-8 w-full px-4">
               <label for="name" class="text-base font-bold text-primary">Nama</label>
-              <input type="text" id="name" name="nama" placeholder="Masukkan Nama" class="form-input w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                  <svg class="h-6 w-6 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
+                    />
+                  </svg>
+                </div>
+                <input type="text" id="name" name="nama" placeholder="Masukkan Nama" class="form-input w-full rounded-md bg-slate-200 p-3 pl-11 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required />
+              </div>
             </div>
             <div class="mb-8 w-full px-4">
-              <label for="email" class="text-base font-bold text-primary">Email</label>
-              <input type="email" id="email" name="email" placeholder="Email Anda" class="form-input w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+              <label for="email" class="mb-2 block font-bold text-primary dark:text-gray-300">Email</label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                  <svg aria-hidden="true" class="h-5 w-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  </svg>
+                </div>
+                <input type="email" id="email" name="email" placeholder="Email Anda" class="form-input w-full rounded-md bg-slate-200 p-3 pl-10 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required />
+              </div>
             </div>
             <div class="mb-8 w-full px-4">
               <label for="message" class="text-base font-bold text-primary">Pesan</label>
-              <textarea
-                type="message"
-                id="message"
-                name="pesan"
-                placeholder="Pesan Anda"
-                class="form-textarea h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-              ></textarea>
+              <div class="relative">
+                <div class="absolute inset-y-4 left-0 flex pl-3">
+                  <svg class="h-5 w-5 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                    />
+                  </svg>
+                </div>
+                <textarea
+                  type="message"
+                  id="message"
+                  name="pesan"
+                  placeholder="Pesan Anda"
+                  class="form-textarea h-32 w-full rounded-md bg-slate-200 p-3 pl-10 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                  required
+                ></textarea>
+              </div>
             </div>
             <div class="px4 w-full">
               <button type="submit" class="btn-kirim w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
@@ -369,16 +400,25 @@
         e.preventDefault();
         btnKirim.classList.toggle('hidden');
         btnLoading.classList.toggle('hidden');
+        myAlert.setAttribute('aria-hidden', false);
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
           .then((response) => {
             btnKirim.classList.toggle('hidden');
             btnLoading.classList.toggle('hidden');
             myAlert.classList.toggle('hidden');
             form.reset();
+
             // console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
       });
+
+      // const removeAlert = document.querySelector('rmv-alert');
+      // window.addEventListener('click', function (e) {
+      //   if (e.target != myAlert && e.target != removeAlert) {
+      //     removeAlert.classList.remove('myAlert');
+      //   }
+      // });
     </script>
 
     <script src="dist/js/script.js"></script>
