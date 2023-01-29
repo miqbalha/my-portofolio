@@ -1,433 +1,483 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
-    <link href="dist/css/final.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- header start -->
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
-      <div class="container">
-        <div class="relative flex items-center justify-between">
-          <div class="px-4">
-            <a href="#home" class="block py-6 text-lg font-bold text-primary">Portofolio</a>
-          </div>
-          <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
-              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
-            </button>
-            <nav
-              id="nav-menu"
-              class="dark:bg-shadow absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-600 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
-            >
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
-                </li>
-                <li class="group">
-                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Tentang Saya</a>
-                </li>
-                <li class="group">
-                  <a href="#portofolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portofolio</a>
-                </li>
-                <li class="group">
-                  <a href="#course" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Kelas Online</a>
-                </li>
-                <li class="group">
-                  <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Kontak</a>
-                </li>
-                <li class="mt-3 items-center pl-8 lg:mt-3">
-                  <div class="flex">
-                    <span class="mr-2 text-sm text-dark dark:text-white">light</span>
-                    <input type="checkbox" class="hidden" id="dark-toggle" />
-                    <label for="dark-toggle">
-                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio</title>
+  <link href="dist/css/final.css" rel="stylesheet" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <div class="container">
+      <div class="relative flex items-center justify-between">
+        <div class="px-4">
+          <a href="#home" class="block py-6 text-lg font-bold text-primary">Portofolio</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+            <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+          </button>
+          <nav id="nav-menu"
+            class="dark:bg-shadow absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-600 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#home"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Home</a>
+              </li>
+              <li class="group">
+                <a href="#about"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">About Me</a>
+              </li>
+              <li class="group">
+                <a href="#portofolio"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">My Project</a>
+              </li>
+              <li class="group">
+                <a href="#course"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Internship and Online Class</a>
+              </li>
+              <li class="group">
+                <a href="#contact"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
+              </li>
+              <li class="mt-3 items-center pl-8 lg:mt-3">
+                <div class="flex">
+                  <span class="mr-2 text-sm text-dark dark:text-white">light</span>
+                  <input type="checkbox" class="hidden" id="dark-toggle" />
+                  <label for="dark-toggle">
+                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                      <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
                       </div>
-                    </label>
-                    <span class="ml-2 text-sm text-dark dark:text-white">dark</span>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
+                    </div>
+                  </label>
+                  <span class="ml-2 text-sm text-dark dark:text-white">dark</span>
+                </div>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </header>
-    <!-- header start end -->
-    <!-- hero section  start -->
-    <section id="home" class="pt-36 dark:bg-dark">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Halo semua 👋, Saya<span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Muh Iqbal Hardiyanto</span></h1>
-            <h2 class="mb-5 font-bold text-dark lg:text-2xl">Mahasiswa</h2>
-            <p class="font-medium text-secondary dark:text-white md:text-justify lg:text-justify">Salam kenal ya, Sekarang saya sedang menempuh kuliah S1</p>
-            <p class="mb-8 font-medium text-secondary dark:text-white md:text-justify lg:text-justify">Perguruan Tinggi Negeri yaitu UNIVERSITAS JEMBER Fakultas Ilmu Komupter Program Studi Informatika.</p>
-            <a href="mailto:muhiqbal1059@gmail.com" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
-          </div>
-          <div class="self w-full px-4 lg:w-1/2">
-            <div class="mt-15 relative lg:right-0 lg:mt-9">
-              <img src="dist/img/saya.png" alt="Muh Iqbal Hardiyanto" class="relative z-10 mx-auto max-w-full" />
-              <span class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
-                <svg width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill="#14b8a6"
-                    d="M63.4,-50.7C75.7,-35.2,74.8,-9.2,67.7,12.9C60.7,35,47.5,53.2,28.3,64.6C9.2,76,-16,80.8,-37.1,72.4C-58.2,64,-75.3,42.5,-78.4,20.3C-81.5,-1.9,-70.8,-24.9,-55.4,-41.1C-40,-57.3,-20,-66.8,2.8,-69C25.6,-71.2,51.1,-66.2,63.4,-50.7Z"
-                    transform="translate(100 100) scale(1)"
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
+    </div>
+  </header>
+  <!-- header start end -->
+  <!-- hero section  start -->
+  <section id="home" class="pt-36 dark:bg-dark">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <h1 class="text-base font-semibold text-primary md:text-xl">Hello World 👋, I'am<span
+              class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Muh Iqbal Hardiyanto</span>
+          </h1>
+          <h2 class="mb-5 font-bold text-dark lg:text-2xl dark:text-white">Student</h2>
+          <p class="font-medium text-secondary dark:text-white md:text-justify lg:text-justify">I'am a Final Year Student</p>
+          <p class="mb-8 font-medium text-secondary dark:text-white md:text-justify lg:text-justify">JEMBER University, Faculty of Computer Sciences</p>
+          <a href="mailto:muhiqbal1059@gmail.com"
+            class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Contact Me</a>
         </div>
-      </div>
-    </section>
-    <!-- hero section end -->
-    <!-- about section start -->
-    <section id="about" class="pt-36 pb-32 dark:bg-dark">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="mb-10 w-full px-4 lg:w-1/2">
-            <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
-            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">Yuk, Baca Selengkapnya Tentang Saya</h2>
-            <p class="max-w-xl text-justify text-base font-medium text-secondary dark:text-white md:text-justify lg:text-lg">
-              Saya mulai memiliki ketertatikan dalam Dunia IT dan developer semenjak SMP, dimana kemudian saya melanjutkan belajar saya di SMK dan memilih jurusan Teknik Komputer dan Jaringan. Kemudian saya mulai mendalami dunia jaringan
-              dan HTML dari dasar dan terus mempelajari sampai lulus sekolah. Kemudian melanjutkan perkuliahan dan keterima di salah satu Universitas di Jawa Timur yaitu UNIVERSITAS JEMBER dan memilih fakultas Ilmu Komputer Program Studi
-              Informatika pada tahun 2017. Selama masa perkuliahan saya mendalami apa itu pemograman, algoritma, logika, kerja tim, pengambil keputusan serta etika profesi.
-            </p>
-          </div>
-          <div class="w-full px-4 lg:w-1/2">
-            <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">Mari Berteman</h3>
-            <p class="mb-6 text-base font-medium text-secondary dark:text-white lg:text-lg">Saling sharing pengalaman serta info yang menarik seputar dunia IT dan Developer</p>
-            <div class="flex items-center">
-              <!-- instagram -->
-              <a href="https://www.instagram.com/m.iqbalha/" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-igs hover:bg-igs hover:text-white dark:text-white">
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>Instagram</title>
-                  <path
-                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                  />
-                </svg>
-              </a>
-              <a href="https://www.facebook.com/m.iqbal.1213986/" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-fbk hover:bg-fbk hover:text-white dark:text-white">
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>Facebook</title>
-                  <path
-                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about section end -->
-
-    <!-- portofolio -->
-    <section id="portofolio" class="bg-slate-700 pt-32 pb-10 dark:bg-dark">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary sm:text-3xl lg:text-4xl">Portofolio</h4>
-            <h2 class="mb-4 text-3xl font-bold text-primary dark:text-white sm:text-2xl lg:text-3xl">Projek</h2>
-            <p class="text-md font-medium text-white md:text-lg">Dibawah ini merupakan projek yang telah saya buat semasa perkuliahan</p>
-          </div>
-        </div>
-        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portofolio/awal-pos.png" alt="pos" />
-            </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-primary dark:text-white">Projek Laravel Point Of Sales</h3>
-            <p class="text-base font-medium text-white md:text-justify lg:text-justify">
-              Sebuah tugas akhir Mata kuliah berbasis framework. Projek website Laravel CRUD (Create Update dan Delete) yang dibuat untuk mempermudah penjualan disebuah usaha Laundry
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portofolio/portoo.jpg" alt="webporto" />
-            </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-primary dark:text-white">Website Portofolio</h3>
-            <p class="text-base font-medium text-white">Salah satu website portofolio sederhana pertama, tentang diri saya</p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portofolio/pbo-ayam.png" alt="pbo-ayam" />
-            </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-primary dark:text-white">Pemograman Berorientasi Objek</h3>
-            <p class="text-base font-medium text-white md:text-justify lg:text-justify">
-              Projek tugas akhir algoritma dan pemograman pembuatan sebuah aplikasi CRUD(Created Update dan Delete) Pengelolahan Ayam Broiler sederhana, Menggunakan bahasa pemograman Java dan database MySql
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md"><img class="h-48 w-full object-contain md:h-full md:w-48" src="dist/img/portofolio/catalog.jpg" alt="catalog" /></div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-primary dark:text-white">Projek Membuat Aplikasi Android Pemula</h3>
-            <p class="text-base font-medium text-white md:text-justify lg:text-justify">
-              Aplikasi Movie Catalog. Merupakan aplikasi pertama saya, dimana saya mengikuti Beasiswa Bekraf Developer Day pada Tahun 2019 di
-              <strong><a href="https://www.dicoding.com/" class="no-underline hover:underline">dicoding</a></strong>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- portofolio end -->
-    <!-- course start -->
-    <section id="course" class="pt-36 pb-32 dark:bg-slate-400">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary dark:text-emerald-900 sm:text-3xl lg:text-4xl">Kelas Online</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark sm:text-2xl lg:text-3xl">Yang Pernah diikuti</h2>
-            <p class="text-md font-medium text-secondary dark:text-dark md:text-lg">Berikut adalah Kelas Online yang pernah saya ikuti dan beberapa sertifikat yang telah saya peroleh</p>
-          </div>
-        </div>
-        <div class="w-full px-4">
-          <div class="flex flex-wrap items-center justify-center">
-            <a href="https://www.dicoding.com/" target="_blank" class="mx-4 max-w-[250px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
-              <img src="dist/img/courses/dicoding.svg" alt="Dicoding" />
-            </a>
-            <a href="https://skilvul.com/profile/cl6w7i8xz01qg01ntcsblqwf9" target="_blank" class="mx-4 max-w-[250px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
-              <img src="dist/img/courses/skilvul.svg" alt="Skilvul" />
-            </a>
-          </div>
-        </div>
-        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/sertifikat/dicoding-sertif.jpg" alt="Dicoding" />
-            </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-dark">Dicoding</h3>
-            <p class="mt-1 text-base font-medium text-secondary dark:text-dark">Belajar Membuat Aplikasi Android untuk Pemula</p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/sertifikat/Skilvul-SkilBadge.jpg" alt="Dicoding" />
-            </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-dark">Skilvul</h3>
-            <p class="text-base font-medium text-secondary dark:text-dark">Python Lanjutan</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- course end -->
-    <!-- contact -->
-    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary dark:text-emerald-500 sm:text-3xl lg:text-4xl">Narahubung</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-3xl">Isi Form dibawah</h2>
-            <p class="text-md dark-text-200 font-medium text-secondary dark:text-white md:text-lg">Silahkan bertanya, dengan mencantumkan email yang aktif Ya 👌</p>
-          </div>
-        </div>
-        <div class="my-alert hidden w-full lg:mx-auto lg:w-2/3">
-          <div class="container" id="alertbox">
-            <div class="text-md relative flex items-center rounded-md bg-primary px-4 py-4 text-white" role="alert">
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="mr-2 h-6 w-6 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                  fill="currentColor"
-                  d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
-                ></path>
+        <div class="self w-full px-4 lg:w-1/2">
+          <div class="mt-15 relative lg:right-0 lg:mt-9">
+            <img src="dist/img/saya.png" alt="Muh Iqbal Hardiyanto" class="relative z-10 mx-auto max-w-full" />
+            <span class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+              <svg width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#14b8a6"
+                  d="M63.4,-50.7C75.7,-35.2,74.8,-9.2,67.7,12.9C60.7,35,47.5,53.2,28.3,64.6C9.2,76,-16,80.8,-37.1,72.4C-58.2,64,-75.3,42.5,-78.4,20.3C-81.5,-1.9,-70.8,-24.9,-55.4,-41.1C-40,-57.3,-20,-66.8,2.8,-69C25.6,-71.2,51.1,-66.2,63.4,-50.7Z"
+                  transform="translate(100 100) scale(1)" />
               </svg>
-              <p><strong>Berhasil Upload!</strong> Pesan Anda Telah diterima</p>
-              <span class="closealertbutton absolute top-0 bottom-0 right-0 px-4 py-4">
-                <svg class="h-6 w-6 fill-current text-white" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <title>close</title>
-                  <path
-                    d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"
-                  />
-                </svg>
-              </span>
-            </div>
+            </span>
           </div>
         </div>
-
-        <form name="form-contact">
-          <div class="w-full lg:mx-auto lg:w-2/3">
-            <div class="mb-8 w-full px-4">
-              <label for="name" class="text-base font-bold text-primary">Nama</label>
-              <div class="relative">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3">
-                  <svg class="h-6 w-6 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
-                    />
-                  </svg>
-                </div>
-                <input type="text" id="name" name="nama" placeholder="Masukkan Nama" class="form-input w-full rounded-md bg-slate-200 p-3 pl-11 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required />
-              </div>
-            </div>
-            <div class="mb-8 w-full px-4">
-              <label for="email" class="mb-2 block font-bold text-primary">Email</label>
-              <div class="relative">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3">
-                  <svg aria-hidden="true" class="h-5 w-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                  </svg>
-                </div>
-                <input type="email" id="email" name="email" placeholder="Email Anda" class="form-input w-full rounded-md bg-slate-200 p-3 pl-10 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required />
-              </div>
-            </div>
-            <div class="mb-8 w-full px-4">
-              <label for="message" class="text-base font-bold text-primary">Pesan</label>
-              <div class="relative">
-                <div class="absolute inset-y-4 left-0 flex pl-3">
-                  <svg class="h-5 w-5 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
-                    />
-                  </svg>
-                </div>
-                <textarea
-                  type="message"
-                  id="message"
-                  name="pesan"
-                  placeholder="Pesan Anda"
-                  class="form-textarea h-32 w-full rounded-md bg-slate-200 p-3 pl-10 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <div class="px4 w-1/2 lg:mx-auto">
-              <button type="submit" class="btn-kirim w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">
-                <svg class="inline-block h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" fill="currentColor" />
-                </svg>
-                Kirim
-              </button>
-              <button disabled type="button" class="btn-loading hidden w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">
-                <svg aria-hidden="true" role="status" class="mr-3 inline h-4 w-4 animate-spin text-white" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
-                    fill="#E5E7EB"
-                  />
-                  <path
-                    d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Loading...
-              </button>
-            </div>
-          </div>
-        </form>
       </div>
-    </section>
-    <!-- contact end -->
-    <!-- footer start -->
-    <section>
-      <footer class="bg-dark pt-20 pb-8">
-        <div class="container">
-          <div class="flex flex-wrap">
-            <div class="mb-9 w-full px-4 font-medium text-slate-300 md:w-1/3">
-              <h2 class="mb-2 text-2xl font-bold md:text-justify lg:text-justify">Alamat</h2>
-              <p>Jln. Kotta Blater RT/RW 03/09</p>
-              <p>Dsn Karangtemplek, Desa Andongsari</p>
-              <p>Kecamatan Ambulu, Jember</p>
-            </div>
-            <div class="mb-12 w-full px-4 md:w-1/2">
-              <h3 class="mb-5 text-2xl font-bold text-slate-300">Tautan</h3>
-              <ul class="text-slate-300">
-                <li>
-                  <a href="#home" class="mb-3 inline-block text-base hover:text-primary">Beranda</a>
-                </li>
-                <li>
-                  <a href="#about" class="mb-3 inline-block text-base hover:text-primary">Tentang Saya</a>
-                </li>
-                <li>
-                  <a href="#portofolio" class="mb-3 inline-block text-base hover:text-primary">Portofolio</a>
-                </li>
-                <li>
-                  <a href="#course" class="mb-3 inline-block text-base hover:text-primary">Kelas Online</a>
-                </li>
-                <li>
-                  <a href="#contact" class="mb-3 inline-block text-base hover:text-primary">kontak</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-full border-t border-slate-700 pt-8">
-            <div class="mb-5 flex items-center justify-center">
-              <!-- instagram -->
-              <a
-                href="https://www.instagram.com/m.iqbalha/"
-                target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-white hover:border-igs hover:bg-igs hover:text-white dark:text-white"
-              >
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>Instagram</title>
-                  <path
-                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.facebook.com/m.iqbal.1213986/"
-                target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-white hover:border-fbk hover:bg-fbk hover:text-white dark:text-white"
-              >
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>Facebook</title>
-                  <path
-                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                  />
-                </svg>
-              </a>
-            </div>
-            <p class="text-center text-xs font-medium text-slate-500">Created By <span>❤</span> <a href="https://www.instagram.com/m.iqbalha/" target="_blank" class="font-bold text-primary">Muh Iqbal Hardiyanto</a></p>
+    </div>
+  </section>
+  <!-- hero section end -->
+  <!-- about section start -->
+  <section id="about" class="pt-36 pb-32 dark:bg-dark">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="mb-10 w-full px-4 lg:w-1/2">
+          <h4 class="mb-3 text-lg font-bold uppercase text-primary">About Me</h4>
+          <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">My Short Story</h2>
+          <p
+            class="max-w-xl text-justify text-base font-medium text-secondary dark:text-white md:text-justify lg:text-lg">
+            I started to have an interest in the world of IT and developers since middle school, where continued
+            my studied at SMK and chose to major in Computer and Network Engineering. Then I started exploring the world
+            network and HTML from the basics and continue to learn until graduating from school. Then continue studying and
+            accepted at one of the universities in East Java, namely JEMBER UNIVERSITY and chose the Faculty of Computer Science
+            Study program Informatics in 2017.
+          </p>
+        </div>
+        <div class="w-full px-4 lg:w-1/2">
+          <h3 class="mb-12 text-2xl font-semibold text-dark dark:text-white lg:pt-3 lg:text-4xl">Lets Follow</h3>
+          <p class="mb-6 text-base font-medium text-secondary dark:text-white lg:text-lg">following my social media and github account</p>
+          <div class="flex items-center">
+            <!-- instagram -->
+            <a href="https://www.instagram.com/m.iqbalha/" target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-igs hover:bg-igs hover:text-white dark:text-white">
+              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+              </svg>
+            </a>
+            <!-- facebook -->
+            <a href="https://www.facebook.com/m.iqbal.1213986/" target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-fbk hover:bg-fbk hover:text-white dark:text-white">
+              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Facebook</title>
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://github.com/miqbalha" target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-white hover:bg-white hover:text-white dark:text-white">
+              <svg role="img" width="27" class="fill-inherit" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+            </a>
+
           </div>
         </div>
-      </footer>
-    </section>
-    <!-- footer end -->
-    <!-- back to top -->
-    <a href="#home" class="hover: fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="topnav">
-      <img src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/48/000000/external-arrow-arrows-those-icons-lineal-color-those-icons-1.png" class="rotate-180" />
-    </a>
-    <!-- back to top end -->
+      </div>
+    </div>
+  </section>
+  <!-- about section end -->
 
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxnLk1loz5K2V3wdT9GevptKTHyld-p8rsYTXADohTGLYO5HYIn9BvcESnuv-oO-Bsafg/exec';
-      const form = document.forms['form-contact'];
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
+  <!-- portofolio -->
+  <section id="portofolio" class="bg-slate-700 pt-32 pb-10 dark:bg-dark">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-16 max-w-xl text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary sm:text-3xl lg:text-4xl">Portofolios</h4>
+          <h2 class="mb-4 text-3xl font-bold text-primary dark:text-white sm:text-2xl lg:text-3xl">My Project</h2>
+          <p class="text-md font-medium text-white md:text-lg">This is a project that i have made</p>
+        </div>
+      </div>
+      <div class="flex w-full flex-wrap justify-center px-2 xl:mx-auto xl:w-10/12 ">
+        <div class="mb-12 p-4 md:w-1/2" >
+          <div class="overflow-hidden rounded-md shadow-md">
+            <img src="dist/img/portofolio/awal-pos.png" alt="pos" />
+          </div>
+          <h3 class="mt-5 mb-3 text-xl font-semibold text-primary dark:text-white">Laravel Point Of Sales</h3>
+          <p class="text-base font-medium text-white md:text-justify lg:text-justify">A Website that processes sales data at a laundry shop</p>
+        </div>
+        <div class="mb-12 p-4 md:w-1/2">
+          <div class="overflow-hidden rounded-md shadow-md">
+            <img src="dist/img/portofolio/portoo.jpg" alt="webporto" />
+          </div>
+          <h3 class="mt-16 mb-3 text-xl font-semibold text-primary dark:text-white">Website Portofolio</h3>
+          <p class="text-base font-medium text-white">My simple portfolio website</p>
+        </div>
+        <div class="mb-12 p-4 md:w-1/2">
+          <div class="overflow-hidden rounded-md shadow-md">
+            <img src="dist/img/portofolio/pbo-ayam.png" alt="pbo-ayam" />
+          </div>
+          <h3 class="mt-5 mb-3 text-xl font-semibold text-primary dark:text-white">Object Oriented Programing Java</h3>
+          <p class="text-base font-medium text-white md:text-justify lg:text-justify">
+            The project completes the algorithm and programming of creating a CRUD (Created Update and Delete) application
+            Broiler management is simple, using the Java programming language and MySql database
+          </p>
+        </div>
+        <div class="mb-12 p-4 md:w-1/2">
+          <div class="rounded-md"><img class="h-48 w-full object-contain md:h-full md:w-48"
+              src="dist/img/portofolio/apps ui_kit.jpg" alt="apps" /></div>
+          <h3 class="mt-5 mb-3 text-xl font-semibold text-primary dark:text-white">Build a beginner mobile application</h3>
+          <p class="text-base font-medium text-white md:text-justify lg:text-justify">UI template mobile application that can be used by developers. My internship
+            <strong><a href="https://www.gamelab.id/" target="_blank" class="no-underline hover:underline">gamelab.id</a></strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- portofolio end -->
+  <!-- course start -->
+  <section id="course" class="pt-36 pb-32 dark:bg-slate-200">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-12 text-center">
+          <h2 class="mb-2 text-lg font-semibold text-primary dark:text-emerald-900 sm:text-3xl lg:text-4xl">Internship and Online Class</h2>
 
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        btnKirim.classList.toggle('hidden');
-        btnLoading.classList.toggle('hidden');
-        myAlert.setAttribute('aria-hidden', false);
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then((response) => {
-            btnKirim.classList.toggle('hidden');
-            btnLoading.classList.toggle('hidden');
-            myAlert.classList.toggle('hidden');
-            form.reset();
-          })
-          .catch((error) => console.error('Error!', error.message));
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+          <p class="text-md font-medium text-secondary dark:text-dark md:text-lg">The following are Online Classes and Internships I've followed</p>
+        </div>
+      </div>
+      <div class="w-full px-4">
+        <div class="flex flex-wrap items-center justify-center">
+          <a href="https://www.dicoding.com/" target="_blank"
+            class="mx-4 max-w-[250px] py-4 opacity-50 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+            <img src="dist/img/courses/dicoding.svg" alt="Dicoding" />
+          </a>
+          <a href="https://skilvul.com/profile/cl6w7i8xz01qg01ntcsblqwf9" target="_blank"
+            class="mx-4 max-w-[250px] py-4 opacity-50 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+            <img src="dist/img/courses/skilvul.svg" alt="Skilvul" />
+          </a>
+          <a href="https://www.gamelab.id/" target="_blank"
+            class="mx-4 max-w-[250px] py-4 opacity-100 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+            <img src="dist/img/courses/Logo_GameLab_Landscape1.png" alt="Skilvul" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- course end -->
 
-    <script>
-      $('.closealertbutton').click(function (e) {
-        pid = $(this).parent().parent().hide(500);
-      });
-    </script>
+  <!-- skill bar -->
+  <section id="skill-bar" class="pt-32 pb-28 dark:bg-slate-300">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-8 max-w-xl text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary dark:text-primary sm:text-3xl lg:text-4xl">Skills</h4>
+        </div>
+        <div class="flex justify-between mb-1">
+          <p class=" text-md dark-text-200 font-medium text-orange dark:text-orange">HTML / CSS</p>
+          <span class="text-md dark-text-200 dark:text-orange px-2 py-1 bg-yellow-200 rounded-lg text-sm text-orange min-w-[46px] text-center">85%</span>
+        </div>
+        <div class="w-full bg-slate-200 rounded-full h-2.5 mb-6">
+          <div class="bg-orange h-2.5 rounded-full" style="width: 85%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <p class="text-md dark-text-200 font-medium text-blue-600 dark:text-blue-600">Mobile Apps Flutter</p>
+          <span class="text-md dark-text-200 font-medium dark:text-blue-600 px-2 py-1 bg-blue-200 rounded-lg text-sm text-blue-600 min-w-[46px] text-center">80%</span>
+        </div>
+        <div class="w-full bg-slate-200 rounded-full h-2.5 mb-6">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <p class="text-md dark-text-200 font-medium text-lime-800 dark:text-lime-600">React Js</p>
+          <span class="text-md dark-text-200 font-medium dark:text-lime-800 py-1 bg-lime-300 rounded-lg text-sm text-lime-800 min-w-[46px] text-center">75%</span>
+        </div>
+        <div class="w-full bg-slate-200 rounded-full h-2.5 mb-6">
+          <div class="bg-lime-800 h-2.5 rounded-full" style="width: 75%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <p class="text-md dark-text-200 font-medium text-yellow-500 dark:text-yellow-600">JavaScript</p>
+          <span class="text-md dark-text-200 font-medium dark:text-yellow-600 py-1 bg-yellow-100 rounded-lg text-sm text-yellow-500 min-w-[46px] text-center" >75%</span>
+        </div>
+        <div class="w-full bg-slate-200 rounded-full h-2.5">
+          <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 75%"></div>
+        </div>
+  </section>
+  </div>
+  <!-- skill bar end -->
+  <!-- contact -->
+  <section id="contact" class="pt-32 pb-32 dark:bg-slate-800">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-8 max-w-xl text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary dark:text-emerald-500 sm:text-3xl lg:text-4xl">Contact Person</h4>
+          <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-3xl">Input Your Mail</h2>
+          <p class="text-md dark-text-200 font-medium text-secondary dark:text-white md:text-lg">Please ask, by including an active email 👌</p>
+        </div>
+      </div>
+      <div class="my-alert hidden w-full lg:mx-auto lg:w-2/3">
+        <div class="container" id="alertbox">
+          <div class="text-md relative flex items-center rounded-md bg-primary px-4 py-4 text-white" role="alert">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle"
+              class="mr-2 h-6 w-6 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+              </path>
+            </svg>
+            <p><strong>Success</strong>Your message has been received</p>
+            <span class="closealertbutton absolute top-0 bottom-0 right-0 px-4 py-4">
+              <svg class="h-6 w-6 fill-current text-white" role="button" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20">
+                <title>close</title>
+                <path
+                  d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
 
-    <script src="dist/js/script.js"></script>
-  </body>
+      <form name="form-contact">
+        <div class="w-full lg:mx-auto lg:w-2/3">
+          <div class="mb-8 w-full px-4">
+            <label for="name" class="text-base font-bold text-primary">Name</label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                <svg class="h-6 w-6 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
+                </svg>
+              </div>
+              <input type="text" id="name" name="nama" placeholder="Your Name"
+                class="form-input w-full rounded-md bg-slate-200 p-3 pl-11 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                required />
+            </div>
+          </div>
+          <div class="mb-8 w-full px-4">
+            <label for="email" class="mb-2 block font-bold text-primary">Email</label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                <svg aria-hidden="true" class="h-5 w-5 text-gray-500 dark:text-gray-400" fill="currentColor"
+                  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+              </div>
+              <input type="email" id="email" name="email" placeholder="Your Email"
+                class="form-input w-full rounded-md bg-slate-200 p-3 pl-10 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                required />
+            </div>
+          </div>
+          <div class="mb-8 w-full px-4">
+            <label for="message" class="text-base font-bold text-primary">Your Message</label>
+            <div class="relative">
+              <div class="absolute inset-y-4 left-0 flex pl-3">
+                <svg class="h-5 w-5 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                </svg>
+              </div>
+              <textarea type="message" id="message" name="pesan" placeholder="Your Message"
+                class="form-textarea h-32 w-full rounded-md bg-slate-200 p-3 pl-10 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                required></textarea>
+            </div>
+          </div>
+          <div class="px4 w-1/2 lg:mx-auto">
+            <button type="submit"
+              class="btn-kirim w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">
+              <svg class="inline-block h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
+                <path
+                  d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"
+                  fill="currentColor" />
+              </svg>
+              Send
+            </button>
+            <button disabled type="button"
+              class="btn-loading hidden w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">
+              <svg aria-hidden="true" role="status" class="mr-3 inline h-4 w-4 animate-spin text-white"
+                viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                  fill="#E5E7EB" />
+                <path
+                  d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                  fill="currentColor" />
+              </svg>
+              Loading...
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- contact end -->
+  <!-- footer start -->
+  <section>
+    <footer class="bg-dark pt-20 pb-8">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-9 w-full px-4 font-medium text-slate-300 md:w-1/3">
+            <h2 class="mb-2 text-2xl font-bold md:text-justify lg:text-justify">Address</h2>
+            <p>Jln. Kotta Blater</p>
+            <p>Desa Andongsari</p>
+            <p>Kecamatan Ambulu, Jember</p>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-1/2">
+            <h3 class="mb-5 text-2xl font-bold text-slate-300">Link</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#home" class="mb-3 inline-block text-base hover:text-primary">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="mb-3 inline-block text-base hover:text-primary">About Me</a>
+              </li>
+              <li>
+                <a href="#portofolio" class="mb-3 inline-block text-base hover:text-primary">My Project</a>
+              </li>
+              <li>
+                <a href="#course" class="mb-3 inline-block text-base hover:text-primary">Internship and Online Class</a>
+              </li>
+              <li>
+                <a href="#contact" class="mb-3 inline-block text-base hover:text-primary">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border-t border-slate-700 pt-8">
+          <div class="mb-5 flex items-center justify-center">
+            <!-- instagram -->
+            <a href="https://www.instagram.com/m.iqbalha/" target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-white hover:border-igs hover:bg-igs hover:text-white dark:text-white">
+              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/m.iqbal.1213986/" target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-white hover:border-fbk hover:bg-fbk hover:text-white dark:text-white">
+              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Facebook</title>
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+          </div>
+          <p class="text-center text-xs font-medium text-slate-500">Made width <span>❤️</span> <a
+              href="https://www.instagram.com/m.iqbalha/" target="_blank" class="font-bold text-primary">Muh Iqbal
+              Hardiyanto</a></p>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- footer end -->
+  <!-- back to top -->
+  <a href="#home"
+    class="hover: fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
+    id="topnav">
+    <img
+      src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/48/000000/external-arrow-arrows-those-icons-lineal-color-those-icons-1.png"
+      class="rotate-180" />
+  </a>
+  <!-- back to top end -->
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxnLk1loz5K2V3wdT9GevptKTHyld-p8rsYTXADohTGLYO5HYIn9BvcESnuv-oO-Bsafg/exec';
+    const form = document.forms['form-contact'];
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.my-alert');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      btnKirim.classList.toggle('hidden');
+      btnLoading.classList.toggle('hidden');
+      myAlert.setAttribute('aria-hidden', false);
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then((response) => {
+          btnKirim.classList.toggle('hidden');
+          btnLoading.classList.toggle('hidden');
+          myAlert.classList.toggle('hidden');
+          form.reset();
+        })
+        .catch((error) => console.error('Error!', error.message));
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+  <script>
+    $('.closealertbutton').click(function (e) {
+      pid = $(this).parent().parent().hide(500);
+    });
+  </script>
+
+  <script src="dist/js/script.js"></script>
+  <script src="https://unpkg.com/taos@1.0.2/dist/taos.js"></script>
+</body>
+
 </html>

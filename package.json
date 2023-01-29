@@ -16,5 +16,9 @@
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "tailgrids": "^2.0.0",
+    "taos": "^1.0.2"
   }
 }
